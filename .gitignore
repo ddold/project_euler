@@ -3,6 +3,7 @@
 
 problem_*/*.iml
 problem_*/target/**
+problem_*/.idea/**
 
 # User-specific stuff
 problem_*/.idea/**/workspace.xml
