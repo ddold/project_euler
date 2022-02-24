@@ -63,6 +63,11 @@ problem_*/atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
 problem_*/.idea/replstate.xml
+problem_*/.idea/inspectionProfiles/Project_Default.xml
+problem_*/.idea/.gitignore
+problem_*/.idea/checkstyle-idea.xml
+problem_*/.idea/compiler.xml
+problem_*/.idea/encodings.xml
 
 # SonarLint plugin
 problem_*/.idea/sonarlint/
