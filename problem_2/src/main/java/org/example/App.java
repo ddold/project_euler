@@ -24,16 +24,19 @@ public class App
     }
 
     public static long solution(int limit) {
+        // every third value in the sequence is even....
         long sum = 0;
-        int start = 1;
-        int next = 1;
-        while (next < limit) {
-            if (next % 2 == 0) {
-                sum += next;
+        int firstVal = 1;
+        int secondVal = 1;
+        int thirdVal = firstVal + secondVal;
+        while (thirdVal < limit) {
+            firstVal = secondVal;
+            secondVal = thirdVal;
+            thirdVal = firstVal + secondVal;
+
+            if (thirdVal % 2 == 0) {
+                sum += thirdVal;
             }
-            int temp = start;
-            start = next;
-            next += temp;
         }
 
         return sum;
