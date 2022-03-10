@@ -33,18 +33,11 @@ public class App
     }
 
     private static int getSquareOfSum(int total) {
-        int sum = 0;
-        for(int i = 1; i <= total; i++) {
-            sum += i;
-        }
+        int sum = (total * (total + 1)) / 2;
         return sum * sum;
     }
 
     private static int getSumOfSquares(int total) {
-        int sum = 0;
-        for (int i = 1; i <= total; i++) {
-            sum += (i * i);
-        }
-        return sum;
+        return ((2 * total + 1) * (total + 1) * total) / 6;
     }
 }
